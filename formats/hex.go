@@ -2,8 +2,9 @@
 package formats
 
 import (
-	"combina/combinacore"
 	"encoding/hex"
+
+	"github.com/cydside/combina/combinacore"
 )
 
 type HexFormatter struct {

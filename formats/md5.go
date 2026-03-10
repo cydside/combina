@@ -2,9 +2,10 @@
 package formats
 
 import (
-	"combina/combinacore"
 	"crypto/md5"
 	"encoding/hex"
+
+	"github.com/cydside/combina/combinacore"
 )
 
 type MD5Formatter struct {

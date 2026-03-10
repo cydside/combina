@@ -9,8 +9,8 @@ import (
 	"strings"
 	"sync"
 
-	"combina/combinacore"
-	"combina/formats"
+	"github.com/cydside/combina/combinacore"
+	"github.com/cydside/combina/formats"
 )
 
 func main() {

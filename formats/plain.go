@@ -2,7 +2,7 @@
 package formats
 
 import (
-	"combina/combinacore"
+	"github.com/cydside/combina/combinacore"
 )
 
 type PlainFormatter struct {

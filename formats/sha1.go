@@ -2,9 +2,10 @@
 package formats
 
 import (
-	"combina/combinacore"
 	"crypto/sha1"
 	"encoding/hex"
+
+	"github.com/cydside/combina/combinacore"
 )
 
 type SHA1Formatter struct {

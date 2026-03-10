@@ -2,8 +2,9 @@
 package formats
 
 import (
-	"combina/combinacore"
 	"fmt"
+
+	"github.com/cydside/combina/combinacore"
 )
 
 // Formatter è l'interfaccia per i formattatori
