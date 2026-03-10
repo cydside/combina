@@ -177,21 +177,3 @@ if [ "$TARGET" == "DEBUG" ]; then
         exit 1
     fi
 fi
-
-# Crea un file con le informazioni di build
-# cat > "build_info_${appver}.txt" << EOF
-# Build Information
-# ================
-# Application: combina
-# Version: $appver
-# Git Hash: $githash
-# Build Date: $build_date
-# Go Version: $go_version
-# Target OS/Arch: $os/$arch
-# Build Target: $TARGET
-
-# Files:
-# $(ls -la ${appname}_* 2>/dev/null || echo "No binaries found")
-# EOF
-
-# print_success "Build info salvata in build_info_${appver}.txt"
