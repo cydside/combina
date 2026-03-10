@@ -2,7 +2,7 @@
 
 ## 📝 Overview
 
-Combina is a powerful combinatorial generator written in Go that creates all possible combinations and permutations of characters or words. Originally developed in C ([combina-0.4.1_src.tar.gz](https://github.com/cydside/combina/blob/main/combina-0.4.1_src.tar.gz) added as source code), it has been completely rewritten in Go to offer enhanced functionality, performance, and usability.
+**combina** is a powerful combinatorial generator written in Go that creates all possible combinations and permutations of characters or words. Originally developed in C ([combina-0.4.1_src.tar.gz](https://github.com/cydside/combina/blob/main/combina-0.4.1_src.tar.gz) added as source code), it has been completely rewritten in Go to offer enhanced functionality, performance, and usability.
 The software implements combinatorial analysis principles to exhaustively generate all possible strings from a given set of elements (characters or words) with specified lengths.
 
 ## ✨ Key Features
