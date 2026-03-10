@@ -1,4 +1,4 @@
-combina - Combinatorial Password and Phrase Generator
+# combina - Combinatorial Password and Phrase Generator
 
 📝 Overview
 
@@ -84,22 +84,22 @@ The software implements combinatorial analysis principles to exhaustively genera
 🛠️ Practical Examples
 bash
 
-# 6-character alphanumeric passwords
+## 6-character alphanumeric passwords
 combina -a -n -k 6 -r
 
-# 3-word passphrases from a sentence
+## 3-word passphrases from a sentence
 combina -phrase "dog cat bird fish" -k 3 -r
 
-# Combinations with MD5 hashes
+## Combinations with MD5 hashes
 combina -a -n -s -k 4 -r -md5
 
-# With prefix/suffix and formatted output
+## With prefix/suffix and formatted output
 combina -phrase "red,green,blue" -input-separator "," -output-separator "-" -k 2 -r -prefix "[" -suffix "]"
 
-# Multi-threading for large volumes
+## Multi-threading for large volumes
 combina -a -A -n -s -k 6 -r -workers 8 -verbose
 
-# Progressive length from 4 to 6 characters
+## Progressive length from 4 to 6 characters
 combina -a -n -k 6 -p 4 -r
 
 📊 Statistics and Progress
@@ -129,10 +129,10 @@ In -verbose mode, the software displays:
 📦 Installation
 bash
 
-# Direct installation
+## Direct installation
 go install combina/cmd/combina@latest
 
-# Or build from source
+## Or build from source
 git clone [[repository-url]](https://github.com/cydside/combina)
 cd combina
 go build -o combina cmd/combina/main.go
