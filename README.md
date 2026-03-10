@@ -5,9 +5,9 @@
 Combina is a powerful combinatorial generator written in Go that creates all possible combinations and permutations of characters or words. Originally developed in C, it has been completely rewritten in Go to offer enhanced functionality, performance, and usability.
 The software implements combinatorial analysis principles to exhaustively generate all possible strings from a given set of elements (characters or words) with specified lengths.
 
-✨ Key Features
+## ✨ Key Features
 
-🎯 Generation Types
+### 🎯 Generation Types
 
     Permutations with repetition (-r): Elements can be reused multiple times (e.g., AAA, AAB, ABA, ABB, ...)
 
@@ -17,7 +17,7 @@ The software implements combinatorial analysis principles to exhaustively genera
 
     Combinations without repetition (-c): Order does not matter, unique elements (e.g., ABC, ABD, ACD, ...)
 
-🔤 Input Modes
+### 🔤 Input Modes
 
     Character Mode: Use predefined or custom character sets
 
@@ -39,7 +39,7 @@ The software implements combinatorial analysis principles to exhaustively genera
 
         Ideal for generating passphrases or word combinations
 
-🚀 Performance and Concurrency
+### 🚀 Performance and Concurrency
 
     Multi-threading support with configurable worker pools (-workers)
 
@@ -49,7 +49,7 @@ The software implements combinatorial analysis principles to exhaustively genera
 
     Real-time progress monitoring (-verbose)
 
-🔐 Output Formats
+### 🔐 Output Formats
 
     Plain: Simple text output (default)
 
@@ -59,7 +59,7 @@ The software implements combinatorial analysis principles to exhaustively genera
 
     HEX: Hexadecimal representation
 
-🎨 Customization
+### 🎨 Customization
 
     Prefix/Suffix: Add custom strings before and after each combination
 
@@ -67,7 +67,7 @@ The software implements combinatorial analysis principles to exhaustively genera
 
     Dual Separators: Independent separators for input (split) and output (join)
 
-💡 Use Cases
+### 💡 Use Cases
 
     Security Testing: Dictionary generation for penetration testing
 
@@ -81,28 +81,28 @@ The software implements combinatorial analysis principles to exhaustively genera
 
     Software Testing: Exhaustive input generation for testing
 
-🛠️ Practical Examples
+### 🛠️ Practical Examples
 bash
 
-## 6-character alphanumeric passwords
+### 6-character alphanumeric passwords
 combina -a -n -k 6 -r
 
-## 3-word passphrases from a sentence
+### 3-word passphrases from a sentence
 combina -phrase "dog cat bird fish" -k 3 -r
 
-## Combinations with MD5 hashes
+### Combinations with MD5 hashes
 combina -a -n -s -k 4 -r -md5
 
-## With prefix/suffix and formatted output
+### With prefix/suffix and formatted output
 combina -phrase "red,green,blue" -input-separator "," -output-separator "-" -k 2 -r -prefix "[" -suffix "]"
 
-## Multi-threading for large volumes
+### Multi-threading for large volumes
 combina -a -A -n -s -k 6 -r -workers 8 -verbose
 
-## Progressive length from 4 to 6 characters
+### Progressive length from 4 to 6 characters
 combina -a -n -k 6 -p 4 -r
 
-📊 Statistics and Progress
+### 📊 Statistics and Progress
 
 In -verbose mode, the software displays:
 
@@ -116,7 +116,7 @@ In -verbose mode, the software displays:
 
     Total elapsed time
 
-🔧 System Requirements
+### 🔧 System Requirements
 
     Go 1.21 or higher
 
@@ -126,18 +126,18 @@ In -verbose mode, the software displays:
 
     CPU: Multi-core support for parallel processing
 
-📦 Installation
+### 📦 Installation
 bash
 
 ## Direct installation
 go install combina/cmd/combina@latest
 
 ## Or build from source
-git clone [[repository-url]](https://github.com/cydside/combina)
+git clone [[github.com/cydside/combina]](https://github.com/cydside/combina)
 cd combina
 go build -o combina cmd/combina/main.go
 
-📚 API Documentation
+### 📚 API Documentation
 
 The software is structured as a modular Go package:
 
@@ -147,7 +147,7 @@ The software is structured as a modular Go package:
 
     Easily extensible with new formatters or generators
 
-🤝 Contributing
+### 🤝 Contributing
 
 The project welcomes contributions! Potential improvement areas:
 
@@ -155,6 +155,6 @@ The project welcomes contributions! Potential improvement areas:
 
     Graphical interfaces
 
-📄 License
+### 📄 License
 
 The MIT License (MIT) - Copyright (c) 2006-present Danilo CICERONE
