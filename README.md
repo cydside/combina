@@ -1,11 +1,12 @@
 combina - Combinatorial Password and Phrase Generator
+
 📝 Overview
 
 Combina is a powerful combinatorial generator written in Go that creates all possible combinations and permutations of characters or words. Originally developed in C, it has been completely rewritten in Go to offer enhanced functionality, performance, and usability.
-
 The software implements combinatorial analysis principles to exhaustively generate all possible strings from a given set of elements (characters or words) with specified lengths.
 
 ✨ Key Features
+
 🎯 Generation Types
 
     Permutations with repetition (-r): Elements can be reused multiple times (e.g., AAA, AAB, ABA, ABB, ...)
