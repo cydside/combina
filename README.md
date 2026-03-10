@@ -12,9 +12,9 @@ The software implements combinatorial analysis principles to exhaustively genera
 
     Permutations without repetition (-d): Each element used only once (e.g., ABC, ACB, BAC, ...)
 
-    Combinations with repetition (-m): Order不重要, elements reusable (e.g., AAA, AAB, ABB, BBB, ...)
+    Combinations with repetition (-m): Order does not matter, elements reusable (e.g., AAA, AAB, ABB, BBB, ...)
 
-    Combinations without repetition (-c): Order不重要, unique elements (e.g., ABC, ABD, ACD, ...)
+    Combinations without repetition (-c): Order does not matter, unique elements (e.g., ABC, ABD, ACD, ...)
 
 🔤 Input Modes
 
@@ -132,7 +132,7 @@ bash
 go install combina/cmd/combina@latest
 
 # Or build from source
-git clone [repository-url]
+git clone [[repository-url]](https://github.com/cydside/combina)
 cd combina
 go build -o combina cmd/combina/main.go
 
