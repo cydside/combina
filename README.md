@@ -82,29 +82,29 @@ The software implements combinatorial analysis principles to exhaustively genera
     Software Testing: Exhaustive input generation for testing
 
 ### 🛠️ Practical Examples
-bash
+    bash
 
 ### 6-character alphanumeric passwords
-combina -a -n -k 6 -r
+    combina -a -n -k 6 -r
 
 ### 3-word passphrases from a sentence
-combina -phrase "dog cat bird fish" -k 3 -r
+    combina -phrase "dog cat bird fish" -k 3 -r
 
 ### Combinations with MD5 hashes
-combina -a -n -s -k 4 -r -md5
+    combina -a -n -s -k 4 -r -md5
 
 ### With prefix/suffix and formatted output
-combina -phrase "red,green,blue" -input-separator "," -output-separator "-" -k 2 -r -prefix "[" -suffix "]"
+    combina -phrase "red,green,blue" -input-separator "," -output-separator "-" -k 2 -r -prefix "[" -suffix "]"
 
 ### Multi-threading for large volumes
-combina -a -A -n -s -k 6 -r -workers 8 -verbose
+    combina -a -A -n -s -k 6 -r -workers 8 -verbose
 
 ### Progressive length from 4 to 6 characters
-combina -a -n -k 6 -p 4 -r
+    combina -a -n -k 6 -p 4 -r
 
 ### 📊 Statistics and Progress
 
-In -verbose mode, the software displays:
+    In -verbose mode, the software displays:
 
     Total number of combinations to generate
 
@@ -127,19 +127,19 @@ In -verbose mode, the software displays:
     CPU: Multi-core support for parallel processing
 
 ### 📦 Installation
-bash
+    bash
 
 ## Direct installation
-go install combina/cmd/combina@latest
+    go install combina/cmd/combina@latest
 
 ## Or build from source
-git clone [[github.com/cydside/combina]](https://github.com/cydside/combina)
-cd combina
-go build -o combina cmd/combina/main.go
+    git clone [[github.com/cydside/combina]](https://github.com/cydside/combina)
+    cd combina
+    go build -o combina cmd/combina/main.go
 
 ### 📚 API Documentation
 
-The software is structured as a modular Go package:
+    The software is structured as a modular Go package:
 
     combinacore: Core generation logic
 
@@ -149,7 +149,7 @@ The software is structured as a modular Go package:
 
 ### 🤝 Contributing
 
-The project welcomes contributions! Potential improvement areas:
+    The project welcomes contributions! Potential improvement areas:
 
     Optimized generation algorithms
 
@@ -157,4 +157,4 @@ The project welcomes contributions! Potential improvement areas:
 
 ### 📄 License
 
-The MIT License (MIT) - Copyright (c) 2006-present Danilo CICERONE
+    The MIT License (MIT) - Copyright (c) 2006-present Danilo CICERONE
