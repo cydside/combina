@@ -130,7 +130,7 @@ The software implements combinatorial analysis principles to exhaustively genera
     bash
 
 ## Direct installation
-    go install combina/cmd/combina@latest
+    go install github.com/cydside/combina@latest
 
 ## Or build from source
     git clone github.com/cydside/combina
