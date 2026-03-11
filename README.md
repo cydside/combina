@@ -106,15 +106,15 @@ The software implements combinatorial analysis principles to exhaustively genera
 
     In -verbose mode, the software displays:
 
-    Total number of combinations to generate
+        Total number of combinations to generate
 
-    Real-time progress
+        Real-time progress
 
-    Generation speed (combinations/sec)
+        Generation speed (combinations/sec)
 
-    Per-worker statistics
+        Per-worker statistics
 
-    Total elapsed time
+        Total elapsed time
 
 ### 🔧 System Requirements
 
@@ -133,7 +133,7 @@ The software implements combinatorial analysis principles to exhaustively genera
     go install combina/cmd/combina@latest
 
 ## Or build from source
-    git clone [[github.com/cydside/combina]](https://github.com/cydside/combina)
+    git clone github.com/cydside/combina
     cd combina
     go build -o combina cmd/combina/main.go
 
@@ -141,19 +141,19 @@ The software implements combinatorial analysis principles to exhaustively genera
 
     The software is structured as a modular Go package:
 
-    combinacore: Core generation logic
+        combinacore: Core generation logic
 
-    formats: Output format handlers
+        formats: Output format handlers
 
-    Easily extensible with new formatters or generators
+        Easily extensible with new formatters or generators
 
 ### 🤝 Contributing
 
     The project welcomes contributions! Potential improvement areas:
 
-    Optimized generation algorithms
+        Optimized generation algorithms
 
-    Graphical interfaces
+        Graphical interfaces
 
 ### 📄 License
 
